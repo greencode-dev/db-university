@@ -29,7 +29,8 @@ AND year = 1
 SELECT * 
 FROM university.exams
 WHERE date = "2020-06-20"
-AND hour > "13%"	
+AND hour > "13%"
+ORDER BY hour ASC	
 
 --6. Selezionare tutti i corsi di laurea magistrale (38)
 
