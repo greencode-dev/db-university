@@ -38,5 +38,5 @@ Il database è stato progettato per soddisfare i seguenti requisiti:
 
 ## 📂 Contenuto della Repository
 
-- `schema.sql`: Il codice SQL completo per la creazione delle tabelle e dei vincoli.
+- `my_schema.sql`: Il codice SQL completo per la creazione delle tabelle e dei vincoli.
 - `diagramma.jpg`: L'esportazione visiva dello schema realizzata con DrawSQL.
