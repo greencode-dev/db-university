@@ -2,7 +2,7 @@
 
 SELECT YEAR(enrolment_date) AS "Anno", COUNT(*) AS "Numero Iscritti"
 FROM university.students
-GROUP BY YEAR(enrolment_date);
+GROUP BY YEAR(enrolment_date)
 
 --2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
@@ -14,10 +14,10 @@ GROUP BY office_address
 
 SELECT exam_id AS "Appello d'Esame", AVG(vote) AS "Media Voti"
 FROM university.exam_student
-GROUP BY exam_id;
+GROUP BY exam_id
 
 --4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
-SELECT degree_id AS "Dipartimento", COUNT(*) AS "Numero Corsi di Laurea"
-FROM university.courses
-GROUP BY degree_id
+SELECT department_id AS "Dipartimento", COUNT(*) AS "Numero Corsi di Laurea"
+FROM university.degrees
+GROUP BY department_id
